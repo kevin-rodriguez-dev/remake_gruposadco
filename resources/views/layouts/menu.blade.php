@@ -10,7 +10,7 @@
                                 <ul>
                                     <li>+(503) 6446-6653</li>
                                     <li>info@gruposadco.com</li>
-                                    <li>Mon - Sat 8:00 - 17:30, Sunday - CLOSED</li>
+                                    <li>Horario de atención: 8:00 am - 5:00 pm</li>
                                 </ul>
                             </div>
                             <div class="header-info-right">
@@ -50,24 +50,10 @@
                             <div class="main-menu f-right d-none d-lg-block">
                                 <nav>
                                     <ul id="navigation">
-                                        <li><a href="#">Inicio</a></li>
+                                        <li><a href="{{ route('home') }}">Inicio</a></li>
                                         <li><a href="#">Nosotros</a></li>
                                         <li><a href="#">Proyectos</a></li>
-                                        <li><a href="#">Servicios</a></li>
-                                        <!--<li><a href="blog.html">Blog</a>
-                                                <ul class="submenu">
-                                                    <li><a href="blog.html">Blog</a></li>
-                                                    <li><a href="single-blog.html">Blog Details</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="#">Pages</a>
-                                                <ul class="submenu">
-                                                    <li><a href="elements.html">Element</a></li>
-                                                    <li><a href="project_details.html">Projects Details</a></li>
-                                                    <li><a href="services_details.html">Services Details</a></li>
-                                                </ul>
-                                            </li>-->
-                                        <li><a href="contact.html">Nos encuentras en.</a></li>
+                                        <li><a href="{{ route('servicio.index') }}">Servicios</a></li>
                                     </ul>
                                 </nav>
                             </div>
