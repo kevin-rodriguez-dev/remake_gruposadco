@@ -21,7 +21,7 @@
                 <div class="col-xl-4 col-lg-4 col-md-6">
                     <div class="single-service-cap mb-30">
                         <div class="service-img">
-                            <img src="assets/img/service/servicess1.png" alt="" />
+                            <img src="{{ asset('img/service/services.jpeg') }}" alt="" />
                         </div>
                         <div class="service-cap">
                             <h4><a href="{{ route('servicio.show', $category['id']) }}">
@@ -30,7 +30,7 @@
                             <a href="{{ route('servicio.show', $category['id']) }}" class="more-btn">Leer más <i class="ti-plus"></i></a>
                         </div>
                         <div class="service-icon">
-                            <img src="assets/img/icon/services_icon1.png" alt="" />
+                            <img src="{{ asset('img/icon/services_icon1.png') }}" alt="" />
                         </div>
                     </div>
                 </div>
