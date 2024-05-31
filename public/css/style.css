@@ -7173,3 +7173,20 @@ del {
 .switch-wrap {
     margin-bottom: 10px;
 }
+
+.circle {
+    width: 512px;
+    height: 512px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #C7EFCF;
+}
+
+.circle img {
+    width: 25%;
+    height: 25%;
+    object-fit: cover;
+}

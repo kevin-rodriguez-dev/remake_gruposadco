@@ -35,10 +35,19 @@
                             <div class="footer-tittle">
                                 <h4>Contacto</h4>
                                 <div class="footer-pera">
-                                    <p class="info1"></p>
+                                    <p class="info1">
+                                        <i class="ti-location-pin"></i>
+                                        Plantel ateos,KM 28.5, Sacacoyo La Libertad, El Salvador
+                                    </p>
                                 </div>
                                 <ul>
-                                    <li><a href="#">+(503) 6446-6653</a></li>
+                                    <li>
+                                        <i class="fas fa-mobile-alt"></i> &nbsp; +(503) 7118-2620
+                                    </li>
+                                    <li>
+                                        <i class="far fa-envelope"></i> &nbsp; info@gruposadco.com</a>  
+                                    </li>
+
                                 </ul>
                             </div>
                         </div>
@@ -69,7 +78,7 @@
                             </div>
                             <!-- Map -->
                             <div class="map-footer">
-                                <img src="{{asset('/img/gallery/map-footer.png')}}" alt />
+                                <img src="{{asset('/img/gallery/sv.svg')}}" alt />
                             </div>
                         </div>
                     </div>

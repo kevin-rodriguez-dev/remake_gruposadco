@@ -8,7 +8,7 @@
                         <div class="row d-flex justify-content-between align-items-center">
                             <div class="header-info-left">
                                 <ul>
-                                    <li>+(503) 6446-6653</li>
+                                    <li>+(503) 2566-5943</li>
                                     <li>info@gruposadco.com</li>
                                     <li>Horario de atención: 8:00 am - 5:00 pm</li>
                                 </ul>
@@ -49,7 +49,7 @@
                                 <nav>
                                     <ul id="navigation">
                                         <li><a href="{{ route('home') }}">Inicio</a></li>
-                                        <li><a href="#">Nosotros</a></li>
+                                        <li><a href="{{ route('about') }}">Nosotros</a></li>
                                         <li><a href="#">Proyectos</a></li>
                                         <li><a href="{{ route('servicio.index') }}">Servicios</a></li>
                                     </ul>

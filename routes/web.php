@@ -19,3 +19,6 @@ Route::get('/', function () {
 })->name('home');
 
 Route::resource('servicio', ServicioController::class);
+
+// Views
+Route::view('nosotros', 'pages.about')->name('about');
