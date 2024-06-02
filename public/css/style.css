@@ -7185,12 +7185,6 @@ del {
     background: #C7EFCF;
 }
 
-.circle img {
-    width: 25%;
-    height: 25%;
-    object-fit: cover;
-}
-
 .card {
     background: #fff;
     border: none;

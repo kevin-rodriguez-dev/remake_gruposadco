@@ -38,9 +38,8 @@
                         Construir junto con nuestros clientes proyectos sólidos y perdurables que contribuyan a mejorar la calidad de vida de nuestros conciudadanos
                     </p>
                 </div>
-                <div class="service-icon">
-                    <img src="{{ asset('img/icon/services_icon1.png') }}" alt="" />
-                </div>
+
+                <img src="{{ asset('img/icon/services_icon1.png') }}" alt="" />
             </div>
         </div>
 
@@ -56,9 +55,8 @@
                         Ser una primera opción de nuestros clientes para realizar sus proyectos con calidad, seguridad y puntualidad, a nivel Nacional
                     </p>
                 </div>
-                <div class="service-icon">
-                    <img src="{{ asset('img/icon/services_icon1.png') }}" alt="" />
-                </div>
+
+                <img src="{{ asset('img/icon/services_icon1.png') }}" alt="" />
             </div>
         </div>
     </div>
