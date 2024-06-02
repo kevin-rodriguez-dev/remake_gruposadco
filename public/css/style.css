@@ -7190,3 +7190,8 @@ del {
     height: 25%;
     object-fit: cover;
 }
+
+.card {
+    background: #fff;
+    border: none;
+}
