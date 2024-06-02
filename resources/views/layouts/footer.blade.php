@@ -23,7 +23,7 @@
                                 <h4>Acceso rápido</h4>
                                 <ul>
                                     <li><a href="{{ route('home') }}">Inicio</a></li>
-                                    <li><a href="#">Nosotros</a></li>
+                                    <li><a href="{{ route('about') }}">Nosotros</a></li>
                                     <li><a href="#">Proyectos</a></li>
                                     <li><a href="{{ route('servicio.index') }}">Servicios</a></li>
                                 </ul>
