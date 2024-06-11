@@ -7095,7 +7095,7 @@ del {
 
 @media screen and (max-width: 767px) {
     .logo img {
-        width: 30%;
+        width: 30% !important;
     }
     
 }
