@@ -7093,9 +7093,8 @@ del {
     width: 60%;
 }
 
-@media screen and (max-width: 767px) {
-    .logo img {
-        width: 30% !important;
+@media (max-width: 767px) {
+    .logo-img {
+        max-width: 30%;
     }
-    
 }
