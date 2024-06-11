@@ -38,9 +38,9 @@
                     <div class="row align-items-center">
                         <!-- Logo -->
                         <div class="col-xl-2 col-lg-2 col-md-1">
-                            <div class="logo">
+                            <div>
                                 <!-- logo-1 -->
-                                <a href="{{ route('home') }}" class="big-logo"><img src="{{asset('/img/logo.png')}}" style="width: 60%;" alt /></a>
+                                <a href="{{ route('home') }}" class="logo"><img src="{{asset('/img/logo.png')}}"/></a>
                             </div>
                         </div>
                         <div class="col-xl-8 col-lg-8 col-md-8">

@@ -2,7 +2,7 @@
 
 :root {
     --main-color-degradado: rgba(13, 42, 26, 0.7);
-    --main-color: rgb(40, 89, 60);
+    --main-color: rgba(13, 42, 26);
     --main-color-text: rgb(25, 55, 37);
     --main-color-secundario: rgba(237, 125, 49, 1);
 }
@@ -2471,7 +2471,7 @@ hr {
 }
 
 .header-area .header-top {
-    padding: 13px 100px;
+    padding: 13px 185px;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
@@ -2482,7 +2482,7 @@ hr {
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .header-area .header-top {
-        padding: 13px 15px;
+        padding: 13px 50px;
     }
 }
 
@@ -2498,14 +2498,14 @@ hr {
     }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 767px) {
     .header-area .header-top {
         padding: 13px 20px;
     }
 }
 
 .header-area .header-bottom {
-    padding: 0px 100px;
+    padding: 0px 185px;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
@@ -2516,26 +2516,30 @@ hr {
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .header-area .header-bottom {
-        padding: 0px 15px;
+        padding: 0px 50px;
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .header-area .header-bottom {
-        padding: 10px 50px;
+        padding: 22px 50px;
     }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
     .header-area .header-bottom {
-        padding: 10px 20px;
+        padding: 22px 20px;
     }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 767px) {
     .header-area .header-bottom {
-        padding: 10px 20px;
+        padding: 22px 20px;
     }
+}
+
+.header-sticky.sticky-bar.sticky {
+    background: var(--main-color);
 }
 
 .header-area {
@@ -2567,7 +2571,7 @@ hr {
 .header-area .header-top .header-info-left ul li {
     color: #fff;
     display: inline-block;
-    margin-right: 45px;
+    margin-right: 56px;
     font-family: "Barlow", sans-serif;
     font-size: 14px;
 }
@@ -2627,7 +2631,7 @@ hr {
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .main-header .main-menu ul li a {
-        padding: 39px 14px;
+        padding: 39px 15px;
     }
 }
 
@@ -2640,7 +2644,7 @@ hr {
     width: 170px;
     background: #fff;
     left: 0;
-    top: 90%;
+    top: 120%;
     visibility: hidden;
     opacity: 0;
     box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.05);
@@ -2667,22 +2671,6 @@ hr {
 .main-header .main-menu ul ul.submenu > li > a:hover {
     color: var(--main-color-secundario);
     background: none;
-}
-
-.main-header .logo .small-logo {
-    display: none;
-}
-
-@media (max-width: 575px) {
-    .main-header .logo .small-logo {
-        display: unset;
-    }
-}
-
-@media (max-width: 575px) {
-    .main-header .logo .big-logo {
-        display: none;
-    }
 }
 
 .main-header ul > li:hover > ul.submenu {
@@ -2720,10 +2708,6 @@ hr {
     -o-transform: rotateY(180deg);
 }
 
-.header-sticky.sticky-bar.sticky {
-    background: var(--main-color);
-}
-
 .header-sticky ul li a {
     padding: 10px 19px;
 }
@@ -2736,23 +2720,13 @@ hr {
     padding: 20px 20px;
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-    .header-sticky.sticky-bar.sticky .main-menu ul > li > a {
-        padding: 39px 14px;
-    }
-}
-
 .slicknav_menu .slicknav_icon-bar {
     background-color: #fff !important;
 }
 
-.slicknav_nav {
+/* .slicknav_nav {
     margin-top: 10px;
-}
-
-.header-area .slicknav_btn {
-    top: -31px;
-}
+} */
 
 .slicknav_menu .slicknav_nav a:hover {
     background: transparent;
@@ -2846,7 +2820,11 @@ hr {
 }
 
 .slider-area .hero__caption h1 {
-    font-size: clamp(2rem, 10vw, 9rem); /* Ajusta el tamaño de fuente según el ancho de la pantalla */
+    font-size: clamp(
+        2rem,
+        10vw,
+        9rem
+    ); /* Ajusta el tamaño de fuente según el ancho de la pantalla */
     font-weight: 900;
     color: #ffffff;
     font-family: "Barlow", sans-serif;
@@ -2864,7 +2842,11 @@ hr {
 }
 
 .slider-area .hero__caption .stock-text h2 {
-    font-size: clamp(1.5rem, 8vw, 8rem); /* Ajusta el tamaño de fuente según el ancho de la pantalla */
+    font-size: clamp(
+        1.5rem,
+        8vw,
+        8rem
+    ); /* Ajusta el tamaño de fuente según el ancho de la pantalla */
     font-weight: 800;
     margin: 0;
     line-height: 1;
@@ -2888,11 +2870,31 @@ hr {
 @keyframes animate {
     0%,
     100% {
-        clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 69%, 100% 52%, 100% 100%, 0% 100%);
+        clip-path: polygon(
+            0% 45%,
+            15% 44%,
+            32% 50%,
+            54% 60%,
+            70% 61%,
+            84% 69%,
+            100% 52%,
+            100% 100%,
+            0% 100%
+        );
     }
 
     50% {
-        clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+        clip-path: polygon(
+            0% 60%,
+            16% 65%,
+            34% 66%,
+            51% 62%,
+            67% 50%,
+            84% 45%,
+            100% 46%,
+            100% 100%,
+            0% 100%
+        );
     }
 }
 
@@ -2902,7 +2904,11 @@ hr {
 .slider-area .hero__caption .hero-text2 a {
     position: relative;
     color: #fff;
-    font-size: clamp(0.8rem, 1.2vw, 1.2rem); /* Ajusta el tamaño de fuente según el ancho de la pantalla */
+    font-size: clamp(
+        0.8rem,
+        1.2vw,
+        1.2rem
+    ); /* Ajusta el tamaño de fuente según el ancho de la pantalla */
     text-transform: uppercase;
     font-family: "Teko", sans-serif;
     font-weight: 400;
@@ -3205,7 +3211,11 @@ hr {
     font-size: 15px;
 }
 
-.support-company-area .support-wrapper .left-content .support-caption p.pera-top {
+.support-company-area
+    .support-wrapper
+    .left-content
+    .support-caption
+    p.pera-top {
     font-size: 17px;
     font-weight: 700;
     color: #0b0b2b;
@@ -3311,26 +3321,42 @@ hr {
 }
 
 @media (max-width: 575px) {
-    .support-company-area .support-wrapper .right-content .support-img-cap span {
+    .support-company-area
+        .support-wrapper
+        .right-content
+        .support-img-cap
+        span {
         padding: 6px 40px;
         font-size: 38px;
     }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-    .support-company-area .support-wrapper .right-content .support-img-cap span {
+    .support-company-area
+        .support-wrapper
+        .right-content
+        .support-img-cap
+        span {
         font-size: 35px;
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .support-company-area .support-wrapper .right-content .support-img-cap span {
+    .support-company-area
+        .support-wrapper
+        .right-content
+        .support-img-cap
+        span {
         font-size: 35px;
     }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-    .support-company-area .support-wrapper .right-content .support-img-cap span {
+    .support-company-area
+        .support-wrapper
+        .right-content
+        .support-img-cap
+        span {
         font-size: 35px;
     }
 }
@@ -4301,7 +4327,11 @@ hr {
 
 .blog_area a:hover,
 .blog_area a :hover {
-    background: -webkit-linear-gradient(131deg, var(--main-color-secundario) 0%, var(--main-color-secundario) 99%);
+    background: -webkit-linear-gradient(
+        131deg,
+        var(--main-color-secundario) 0%,
+        var(--main-color-secundario) 99%
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration: none;
@@ -5893,15 +5923,39 @@ hr {
 }
 
 .overlay::before {
-    background-image: -moz-linear-gradient(170deg, rgba(34, 34, 34, 0) 0%, #000 100%);
-    background-image: -webkit-linear-gradient(170deg, rgba(34, 34, 34, 0) 0%, #000 100%);
-    background-image: -ms-linear-gradient(170deg, rgba(34, 34, 34, 0) 0%, #000 100%);
+    background-image: -moz-linear-gradient(
+        170deg,
+        rgba(34, 34, 34, 0) 0%,
+        #000 100%
+    );
+    background-image: -webkit-linear-gradient(
+        170deg,
+        rgba(34, 34, 34, 0) 0%,
+        #000 100%
+    );
+    background-image: -ms-linear-gradient(
+        170deg,
+        rgba(34, 34, 34, 0) 0%,
+        #000 100%
+    );
 }
 
 .hero-overly::before {
-    background-image: -moz-linear-gradient(0deg, rgba(2, 8, 52, 0.74902) 0%, rgba(2, 8, 52, 0.14902) 100%);
-    background-image: -webkit-linear-gradient(0deg, rgba(2, 8, 52, 0.74902) 0%, rgba(2, 8, 52, 0.14902) 100%);
-    background-image: -ms-linear-gradient(0deg, rgba(2, 8, 52, 0.74902) 0%, rgba(2, 8, 52, 0.14902) 100%);
+    background-image: -moz-linear-gradient(
+        0deg,
+        rgba(2, 8, 52, 0.74902) 0%,
+        rgba(2, 8, 52, 0.14902) 100%
+    );
+    background-image: -webkit-linear-gradient(
+        0deg,
+        rgba(2, 8, 52, 0.74902) 0%,
+        rgba(2, 8, 52, 0.14902) 100%
+    );
+    background-image: -ms-linear-gradient(
+        0deg,
+        rgba(2, 8, 52, 0.74902) 0%,
+        rgba(2, 8, 52, 0.14902) 100%
+    );
 }
 
 .sample-text-area {
@@ -6680,7 +6734,8 @@ del {
 }
 
 .primary-checkbox input:checked + label {
-    background: url(../img/elements/primary-check.png) no-repeat center center/cover;
+    background: url(../img/elements/primary-check.png) no-repeat center
+        center/cover;
     border: none;
 }
 
@@ -6718,7 +6773,8 @@ del {
 }
 
 .confirm-checkbox input:checked + label {
-    background: url(../img/elements/success-check.png) no-repeat center center/cover;
+    background: url(../img/elements/success-check.png) no-repeat center
+        center/cover;
     border: none;
 }
 
@@ -6761,7 +6817,8 @@ del {
 }
 
 .disabled-checkbox input:checked + label {
-    background: url(../img/elements/disabled-check.png) no-repeat center center/cover;
+    background: url(../img/elements/disabled-check.png) no-repeat center
+        center/cover;
     border: none;
 }
 
@@ -6799,7 +6856,8 @@ del {
 }
 
 .primary-radio input:checked + label {
-    background: url(../img/elements/primary-radio.png) no-repeat center center/cover;
+    background: url(../img/elements/primary-radio.png) no-repeat center
+        center/cover;
     border: none;
 }
 
@@ -6837,7 +6895,8 @@ del {
 }
 
 .confirm-radio input:checked + label {
-    background: url(../img/elements/success-radio.png) no-repeat center center/cover;
+    background: url(../img/elements/success-radio.png) no-repeat center
+        center/cover;
     border: none;
 }
 
@@ -6880,7 +6939,8 @@ del {
 }
 
 .disabled-radio input:checked + label {
-    background: url(../img/elements/disabled-radio.png) no-repeat center center/cover;
+    background: url(../img/elements/disabled-radio.png) no-repeat center
+        center/cover;
     border: none;
 }
 
@@ -7027,4 +7087,15 @@ del {
 .card {
     background: #fff;
     border: none;
+}
+
+.logo img {
+    width: 60%;
+}
+
+@media screen and (max-width: 767px) {
+    .logo img {
+        width: 30%;
+    }
+    
 }
